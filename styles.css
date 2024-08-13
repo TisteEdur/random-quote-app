@@ -11,8 +11,10 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5em;
     background-color: rgba(253, 206, 32, 255);
     background-image: url(./assets/pen.png), url(./assets/explore.png), url(./assets/learn.png);
     background-size: 350px, 350px, 100px;
@@ -39,7 +41,6 @@ body {
         align-items: center;
         justify-content: flex-start;
         gap: 1.5em;
-        position: relative;
 
         & .title {
             width: 100%;
@@ -90,6 +91,25 @@ body {
         border-radius: 2em;
         cursor: pointer;
         transition: all 400ms ease-in;
+    }
+}
+
+.creator-container {
+    & .creator-text {
+        font-family: "Lora";
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: rgba(21, 21, 21, 255);
+
+        & .creator-hyperlink {
+            font-family: "Lobster";
+            font-size: 1.2rem;
+            font-weight: 500;
+            background: -webkit-linear-gradient(110deg, rgba(86, 3, 173, 255), rgba(255, 0, 110, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
     }
 }
 
