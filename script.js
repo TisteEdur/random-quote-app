@@ -7,8 +7,12 @@ async function getquote(url) {
     const response = await fetch(url);
     let data = await response.json();
 
-    quote.textContent = data[0].content;
-    author.textContent = data[0].author;
+    if (response.ok) {
+        quote.textContent = data[0].content;
+        author.textContent = data[0].author;
+    } else {
+        quote.textContent = "An error occurred! Couldn't load Your daily inspiration...";
+    }
 }
 
 getquote(api_url);

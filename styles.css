@@ -41,6 +41,7 @@ body {
         align-items: center;
         justify-content: flex-start;
         gap: 1.5em;
+        overflow: hidden;
 
         & .title {
             width: 100%;
@@ -55,6 +56,7 @@ body {
 
         & .quote-container {
             padding: 1.5em 0.5em 1.5em 1.5em;
+            overflow-y: auto;
         }
 
         & #quote,
@@ -171,4 +173,27 @@ body {
     html {
         font-size: 8px;
     }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 0.313em;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(253, 206, 32, 255);
+    border-radius: 31.875em;
+}
+
+::-webkit-scrollbar-track-piece::start {
+    margin-top: 0.938em;
+}
+
+::-webkit-scrollbar-track-end::start {
+    margin-bottom: 0.938em;
 }
