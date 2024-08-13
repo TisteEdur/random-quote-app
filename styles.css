@@ -91,12 +91,14 @@ body {
         cursor: pointer;
         transition: all 400ms ease-in;
     }
+}
 
-    & .generate-quote:hover {
+/* Hover */
+@media (hover: hover) {
+    .generate-quote:hover {
         color: rgba(243, 243, 243, 255);
         background-color: rgba(255, 0, 110, 255);
     }
-
 }
 
 /* Media Queries */
