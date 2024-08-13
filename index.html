@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randow Quote Exercise</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <div class="loader"></div> -->
+
+    <main class="wrapper">
+      <section class="content">
+        <h1 class="title">Get inspired!</h1>
+
+        <blockquote class="quote-container">
+          <p id="quote">Loading you inspiration for the day!</p>
+        </blockquote>
+        <cite id="author"></cite>
+      </section>
+
+      <button class="generate-quote" onclick="getquote(api_url)">
+        New Quote
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
