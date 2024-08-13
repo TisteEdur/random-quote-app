@@ -32,6 +32,7 @@ body {
     background-color: rgba(21, 21, 21, 255);
     border-radius: 2em;
     box-shadow: rgba(21, 21, 21, 0.2) 0px 8px 24px;
+    background-image: url(./assets/bg.png);
 
     & .content {
         flex: 1;
