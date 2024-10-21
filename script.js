@@ -1,18 +1,18 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
-const api_url = "https://api.quotable.io/quotes/random";
+const apiURL = "https://quotes-api-self.vercel.app/quote";
 
-async function getquote(url) {
+async function getQuote(url) {
     const response = await fetch(url);
     let data = await response.json();
 
     if (response.ok) {
-        quote.textContent = data[0].content;
-        author.textContent = data[0].author;
+        quote.textContent = data.quote;
+        author.textContent = data.author;
     } else {
         quote.textContent = "An error occurred! Couldn't load Your daily inspiration...";
     }
 }
 
-getquote(api_url);
+getQuote(apiURL);
