@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,7 @@ body {
         min-height: 50px;
         font-family: "Lobster";
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: rgba(21, 21, 21, 255);
         background: linear-gradient(90deg, #0000 34.55%, rgba(253, 206, 32, 255) 94.17%);
         background-color: rgba(253, 206, 32, 255);
@@ -101,12 +101,12 @@ body {
     & .creator-text {
         font-family: "Lora";
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: rgba(21, 21, 21, 255);
 
         & .creator-hyperlink {
             font-family: "Lobster";
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 500;
             background: -webkit-linear-gradient(110deg, rgba(86, 3, 173, 255), rgba(255, 0, 110, 255));
             -webkit-background-clip: text;
@@ -166,13 +166,7 @@ body {
 
     .wrapper {
         width: 95vw;
-        height: 95vh;
-    }
-}
-
-@media (max-width: 389px) {
-    html {
-        font-size: 8px;
+        height: 75vh;
     }
 }
 
